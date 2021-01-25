@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+      <header>
+          <a class="logo" href="#">Logo</a>
+          <div id="toggle" onclick="toggle();"></div>
+      </header>
+      <div class="content">
+          <h2>Hello Word,<br>I'm<span>Tatiana IVANOVA</span></h2>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio nisi unde ad aliquid quos eum quia sunt, accusamus tempore, veritatis amet itaque rerum suscipit velit dolorum voluptas, modi nobis!</P>
+          <a class="btn" href="#">Know More</a>
+        </div>
+        <ul class="sci">
+         <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+         <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+         <li><a href="#"><img src="./images/linkedin.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+      function toggle(){
+          var sec = document.getElementById('sec');
+          var nav = document.getElementById('navigation');
+          sec.classList.toggle('active');
+          nav.classList.toggle('active');
+      }
+    </script>
+    
+</body>
+</html>
